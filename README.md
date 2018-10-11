@@ -1,2 +1,2 @@
-# Onboarding_Exit_Tool
+# Onboarding & Exit Tool
 Node.js application to automate onboarding &amp; exit of employees 
