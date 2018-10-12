@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <link rel="stylesheet" href="http://cdn.svc.oneadvanced.com/mosaic/1.0.0/css/mosaic.css">
+        <link rel="stylesheet" href="http://cdn.svc.oneadvanced.com/mosaic/1.0.0/css/mosaic-no-fonts.css">
+        <script type="text/javascript" src="https://cdn.svc.oneadvanced.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.svc.oneadvanced.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .headingspace{
+            padding-left: 30%;
+        }
+    </style>
+</head>
+<body>
+
+
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!--<a class="navbar-logo pull-left" href="#">
+                            <img src="C:\Users\aravind.mohan\Abin2\my-app\Express_Test\logo.svg" alt="Advanced" class="logo">
+                            <span>QUICK</span>
+                         
+                        </a>-->
+                       
+                        <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" data-toggle="collapse" data-target="#navbar-minimum-collapse">
+                            <span class="hamburger-label">Menu</span>
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div id="navbar-minimum-collapse" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Contact Toolchain</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-left">
+                            
+                                <li role="separator" class="divider"></li>
+                                <li>Advanced</li>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="col-md-4"></div>
+            <div id="myDivision" style="padding-left: 33%" class="alert alert-success" role="alert">
+            <strong>Send GitHub Invite</strong> Enter GitHub ID of user to send organization invite 
+            </div> 
+    
+            <div class="col-md-4"></div>
+            <div class="form-group">
+                    <form action="/GITHUBinvite" method="post">
+                    <label for="email"style="padding-left: 1.25%">GitHub ID </label>
+                    <input type="text" input name="Invite_ID" class="btn btn-default" style="width:250px;">
+                    <input type="submit" class="btn btn-default"/>
+                    </form>
+            </div>
+            <br>
+
+        <div class="col-md-4"></div>
+        <div id="myDivision" style="padding-left: 30%" class="alert alert-danger" role="alert">
+        <strong>Delete user from GitHub</strong> Enter employee ID of the user to be deleted from GitHub advancedcsg #RACE
+        </div> 
+
+        <div class="col-md-4"></div>
+        <div class="form-group">
+                <form action="/GITHUBdelete" method="post">
+                <label for="email" >Employee- ID </label>
+                <input type="text" input name="Emp_ID" class="btn btn-default " style="width:250px;" id="email">
+                <input type="submit" class="btn btn-default"/>
+                </form>
+        </div>
+        <br>
+        <div class="col-md-4"></div>
+        <div id="myDivision" class="alert alert-danger headingspace" role="alert">
+        <strong>Delete user from JIRA</strong> Enter employee ID of the user to be deleted from advancedcsg #NotConnectedToDB
+        </div> 
+       
+        <div class="col-md-4"></div>
+        <div class="form-group">
+                <form action="/JIRAdelete" method="post">
+                <label for="email">2nd function </label>
+                <input type="email" input name="JiraDelete_emailID" class="btn btn-default" style="width:250px;" id="email">
+                <input type="submit" class="btn btn-default"/>
+                </form>
+        </div>
+        <br>
+       
+</body>
+</html>
