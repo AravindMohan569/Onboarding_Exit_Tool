@@ -1,0 +1,54 @@
+CONNECTING TO DATABASE
+
+const config = {
+  server : 'BLR-98T99R2-D',
+  user : 'sa',
+  password : 'W3lc0m3',
+  database : 'ExcellToDb',
+  options : { 
+      encrypt:false
+  }
+}
+
+
+
+DEPENDENCIES :
+
+{
+  "name": "integrate",
+  "version": "1.0.0",
+  "main": "UI_DB_TOOL.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "alert-node": "^1.2.1",  //alert-plugin 
+    "comma-separated-values": "^3.6.4", //Not used (Used during Excell to DB conversion process)
+    "express": "^4.16.3", //not used 
+    "http": "0.0.0", //used for http connection
+    "jQuery": "^1.7.4", //not required
+    "js-alert": "^1.0.4", // alert plugin
+    "jsdom": "^12.0.0", // Not required ( Used to test document. function)
+    "mssql": "^4.2.1", // For using MS SQL
+    "node-datetime": "^2.1.0", //Fetch current Date and Time
+    "node-fetch": "^2.2.0", //Required for GitHub
+    "octonode": "^0.9.4", //Required for GitHub
+    "pg": "^7.4.3", // User for pgAdmin 4 v2 (This was used to get JIRA users from Postgress, but not used now)
+    "popups": "^1.1.3", // Used to pop up ALERTS (This is not the proper way. We need to figure out a way to bring Pop-ups from the browser itself)
+    "sequential-task-queue": "^1.2.1", // Used to execute functions in a SEQUENCE (not implemented in this program, can be removed)
+    "xlsx": "^0.14.0"  //Used for Excel SHEETS
+  }
+}
+
+
+
+Use POSTMAN app to test REST API calls
+
+DATABASE STRUCTURE can be found in 
+
+
+
